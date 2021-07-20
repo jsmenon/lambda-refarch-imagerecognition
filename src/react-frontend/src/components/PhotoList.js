@@ -14,7 +14,7 @@ export const S3ImageUpload = (props) => {
   const [uploading, setUploading] = useState(false)
   const [statuses, setStatuses] = useState({})
 
-  const ProcessingStatus = (props) => {
+  const ProcessingStatus = () => {
     setStatuses(prevState => {
       for (let id in props.processingStatuses) {
         if (id in prevState) {
